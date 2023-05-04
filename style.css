@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    
+    background: radial-gradient(circle, 
+            #FF0000 0%, 
+            #FF1900 20%, 
+            #FF3300 40%, 
+            #FF4D00 60%, 
+            #FF6600 80%, 
+            #FF7F00 100%);
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 5px solid #fff;
+}
+nav ul{
+    display: flex;
+    float: right;
+    align-items: center;
+    list-style: none;
+    
+}
+nav ul li{
+    padding: 10px 25px;
+    align-items: center;
+    position: relative;
+}
+nav li a{
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: bold;
+   color: #fff;
+}
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: #ffff;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 1s;
+ }
+nav ul li a:hover::before{
+   width: 100%;
+}
+nav li i{
+    color: #fff;
+    font-size: 50px;
+}
+nav .logo{
+    float: left;
+    height: 100px;
+}
+
+.banner{
+    background-image: url(Imagenes/HappyLabourDay.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top: 60px solid transparent;
+    height: 1004px;
+}
+
+.caja{
+    height: 920px;
+    padding-top: 50px;
+}
+
+.inicio,.articulos{
+    background-color: ghostwhite;
+    position: relative;
+}
+.calendario,.mas{
+    position: relative;
+}
+.inicio img,.calendario img,.articulos img,.mas img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.caja h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    background-image: radial-gradient(circle at 12.5% 12.5%, #c03eb8 0, #cd33a9 7.14%, #d62999 14.29%, #dd1f89 21.43%, #e21979 28.57%, #e41869 35.71%, #e41f59 42.86%, #e22849 50%, #de323a 57.14%, #d93d2a 64.29%, #d14718 71.43%, #c95000 78.57%, #bf5900 85.71%, #b46100 92.86%, #a86800 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #07B2D8;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    font-size: 60px;
+    float: right;
+    padding: 20px 0px;
+    align-items: center;
+    list-style: none;
+}
+footer ul li{
+   padding: 0 30px;
+}
+footer ul li a{
+    color: #2b2a2a;
+}
+footer h1{
+    color: #fff;
+    margin-left: 25px;
+}
+
+
+  
